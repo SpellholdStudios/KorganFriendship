@@ -1,0 +1,216 @@
+//K1 (25)
+
+IF
+AreaCheck("AR4500")
+InMyArea("CHALSP01")
+Global("L#KorganIEPGavid","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPGavid","LOCALS",1)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+AreaCheck("AR4500")
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("L#KorganIEPGavid","LOCALS",1)
+GlobalGT("BeginChallenge1","GLOBAL",10)
+Global("L#KorganIEPPlane","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPPlane","GLOBAL",1)
+END
+
+IF
+Global("L#KorganIEPPlane","GLOBAL",1)
+THEN
+RESPONSE #100
+StartDialogOverride("KORGA25J",Player1)
+END
+
+//K2 (25)
+
+IF
+InParty(Myself)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("L#KorganIEPTalks25","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPTalks25","GLOBAL",1)
+RealSetGlobalTimer("L#KorganIEPTalks25T","GLOBAL",1800)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+AreaCheck("AR4500")
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("L#KorganIEPTalks25","GLOBAL",1)
+RealGlobalTimerExpired("L#KorganIEPTalks25T","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPTalks25","GLOBAL",2)
+END
+
+IF
+Global("L#KorganIEPTalks25","GLOBAL",2)
+THEN
+RESPONSE #100
+StartDialogOverride("KORGA25J",Player1)
+END
+
+//K3 (25)
+
+IF
+InParty(Myself)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("L#KorganIEPTalks25","GLOBAL",3)
+RealGlobalTimerExpired("L#KorganIEPTalks25T","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPTalks25","GLOBAL",4)
+RealSetGlobalTimer("L#KorganIEPTalks25T","GLOBAL",1800)
+END
+
+
+IF
+InParty(Myself)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+AreaCheck("AR4500")
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("L#KorganIEPTalks25","GLOBAL",4)
+RealGlobalTimerExpired("L#KorganIEPTalks25T","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPTalks25","GLOBAL",5)
+END
+
+IF
+Global("L#KorganIEPTalks25","GLOBAL",5)
+THEN
+RESPONSE #100
+StartDialogOverride("KORGA25J",Player1)
+END
+
+//K4 (25)
+
+IF
+InParty(Myself)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+AreaCheck("AR5501")
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!Global("L#KorganIEPBlock","GLOBAL",1)
+Global("L#KorganIEPAllDone","GLOBAL",2)
+Global("L#KorganIEP25Drink","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEP25Drink","GLOBAL",1)
+END
+
+IF
+Global("L#KorganIEP25Drink","GLOBAL",1)
+THEN
+RESPONSE #100
+StartDialogOverride("KORGA25J",Player1)
+END
+
+//k5 (25)
+
+IF
+!Dead("Abazigal")
+InMyArea("CHALSP01")
+Global("L#KorganIEPAbaz","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPAbaz","LOCALS",1)
+END
+
+IF
+InParty(Myself)
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+Dead("Abazigal")
+AreaCheck("AR6005")
+Global("L#KorganIEPAbaz","LOCALS",1)
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("L#KorganIEPAbazigal","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPAbazigal","GLOBAL",1)
+END
+
+IF
+Global("L#KorganIEPAbazigal","GLOBAL",1)
+THEN
+RESPONSE #100
+StartDialogOverride("KORGA25J",Player1)
+END
+
+//k6 (25) - Yaga's heart
+
+IF
+InParty(Myself)
+PartyHasItem("HGHEART2")
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+Global("L#KorganIEPYagaheart","GLOBAL",0)
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPYagaheart","GLOBAL",1)
+END
+
+IF
+Global("L#KorganIEPYagaheart","GLOBAL",1)
+THEN
+RESPONSE #100
+StartDialogOverride("KORGA25J",Player1)
+END
+
+//k7 (25) - Sendai's Enclave
+
+IF
+InParty(Myself)
+AreaCheck("AR6101")
+See(Player1)
+CombatCounter(0)
+!See([ENEMY])
+Global("L#KorganIEPSend","GLOBAL",0)
+!StateCheck("KORGAN",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("L#KorganIEPSend","GLOBAL",1)
+END
+
+IF
+Global("L#KorganIEPSend","GLOBAL",1)
+THEN
+RESPONSE #100
+StartDialogOverride("KORGA25J",Player1)
+END
