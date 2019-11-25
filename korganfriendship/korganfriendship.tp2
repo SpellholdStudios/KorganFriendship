@@ -1,52 +1,53 @@
 
 BACKUP ~korganfriendship/backup~
 AUTHOR ~Lava Del'Vortel and fluke13; consultation - Rhaella and Kaeloree~
-VERSION ~1.3~
-README ~korganfriendship/readme.html~
+VERSION ~v1.4~
+README ~korganfriendship/korganfriendship-readme-english.html~
 
 // Translations
 AUTO_TRA ~korganfriendship/translations/%s~
 
 ALWAYS
-  // No exception, everything needs to be converted
-  ACTION_DEFINE_ARRAY Korgannoconvert BEGIN END
 
-  // any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
-  ACTION_DEFINE_ARRAY Korganreload BEGIN korgan END
+	/* Converts tra files to UTF-8 */
+	// No exception, everything needs to be converted
+	ACTION_DEFINE_ARRAY Korgannoconvert BEGIN END
 
-  LAF HANDLE_CHARSETS
-    INT_VAR
-      infer_charsets = 1
-    STR_VAR
-      tra_path = EVAL ~%MOD_FOLDER%/translations~
-      noconvert_array = korgannoconvert
-      reload_array = korganreload
-  END
+	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+	ACTION_DEFINE_ARRAY Korganreload BEGIN korgan END
+
+	LAF HANDLE_CHARSETS
+		INT_VAR
+			infer_charsets = 1
+		STR_VAR
+			tra_path = EVAL ~%MOD_FOLDER%/translations~
+			noconvert_array = korgannoconvert
+			reload_array = korganreload
+	END
+
 END
 
 
 LANGUAGE ~English~
-         ~English~
+         ~english~
          ~korganfriendship/translations/english/korgan.tra~
 
+
 BEGIN @1 /* Korgan Friendship for BG2: ToB */
+REQUIRE_PREDICATE GAME_INCLUDES ~tob~ @2 /* You must have Throne of Bhaal installed. */
 
-// Adding CD_STATE_NOTVALID
 
-APPEND ~STATE.IDS~
-  ~0x80101FEF CD_STATE_NOTVALID~
-  UNLESS ~CD_STATE_NOTVALID~
-  
+/* CamDawg's custom IsValidForPartyDialogue() state. Thanks Cam!
+   covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS, STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING */
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
 // Compiling dialogue & scripts SOA
-
 COMPILE ~korganfriendship/dialogues/korganj.d~
 EXTEND_TOP ~korgan.bcs~ ~korganfriendship/scripts/korgan.baf~
 
 // Compiling dialogue & scripts TOB
-
 COMPILE ~korganfriendship/dialogues/korga25j.d~
 EXTEND_TOP ~korg25.bcs~ ~korganfriendship/scripts/korg25.baf~
 
 // COPY
-
-COPY ~korganfriendship/L#koriep.spl~ ~override/L#koriep.spl~
+COPY ~korganfriendship/l#koriep.spl~ ~override/l#koriep.spl~
