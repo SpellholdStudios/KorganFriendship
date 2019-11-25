@@ -10,7 +10,7 @@ Baldur's Gate Trilogy and EET<h3>
 </div><br />
 
 
-**Authors:** Lava Del'Vortel and fluke13 
+**Authors:** Lava Del'Vortel and fluke13  
 **Mod Website:** <a href="http://www.spellholdstudios.net/ie/npciep">Spellhold Studios</a>  
 **Mod Forum:** <a href="http://www.shsforums.net/index.php?showforum=353">Korgan Friendship</a><br /><br />
 
