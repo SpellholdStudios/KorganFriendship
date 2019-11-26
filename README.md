@@ -151,7 +151,7 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 ## <a name="versions" id="versions"></a>Versions History
 
-##### Version 3.4 (November 24, 2019)
+##### Version 1.4 (November 24, 2019)
 
 - Added *korganfriendship.ini* metadata file to support AL|EN's "Project Infinity".
 - Added `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
@@ -165,36 +165,25 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 ## 
 
-##### Version 3.0 (August 24, 2017)
+##### Version 1.3 (January 5, 2019)
 
-- Added French translation provided by Isaya.
-- BG2EE/EET compatibility with translation support.
-- Added Spanish translation (Clan DLAN) - v3.1.
-- Fixed Hell talk - v3.1.
-- Isaya's .tra fixes - v3.2.
-- Merzbau's Chinese translation - v3.3.
-- Transfered mod to SpellHold Studios GitHub account.
+- Two ToB dialogue fixes that prevent them from repeating.
 
 ## 
 
-##### Version 2.1 (August 19, 2012)
+##### Version 1.2 (September 22, 2018)</h6>
 
-- Added Polish translation by Lava Del'Vortel.
-- Transfered mod to SpellHold Studios GitHub account.
-
-## 
-
-##### Version 2.0 (January 17, 2011)
-
-- TRAified.
-- Added Russian translation by ArcaneCoast.ru, thanks to prowler and Ardanis_gen1e.
-- Renamed folder/mod to 'korganfriendship' from 'korgan', stopping technical conflict with Imoen Romance.
-- That doesn't mean I condone using the two mods together! There could still be other incompatibilities, and there sure are conceptual ones!
-- Transfered mod to SpellHold Studios GitHub account.
+- Fixed script typo that may cause problems.
 
 ## 
 
-##### Version 1.0 (April 28, 2010)
+##### Version 1.1 (August 08, 2018)</h6>
+
+- Compatibility with Korgan's Redemption: Korgan IEP directory and exe renamed.
+
+## 
+
+##### Version 1.0 (June 2018)</h6>
 
 - Initial release.
 <div align="right"><a href="#top">Back to top</a></div>
