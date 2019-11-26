@@ -155,6 +155,7 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 - Added *korganfriendship.ini* metadata file to support AL|EN's "Project Infinity".
 - Added `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
+- Component: added *DESIGNATED* number and "*korgan_friendship*" LABEL.
 - Updated deprecated modding tools links.
 - Lower cased files.
 - Updated and renamed readme files to *korganfriendship-readme-%LANGUAGE%.html*.

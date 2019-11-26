@@ -33,9 +33,13 @@ LANGUAGE ~English~
          ~korganfriendship/translations/english/korgan.tra~
 
 
+/* ==================================== *
+ *    Korgan Friendship for BG2: ToB    *
+ * ==================================== */
+
 BEGIN @1 /* Korgan Friendship for BG2: ToB */
 REQUIRE_PREDICATE GAME_INCLUDES ~tob~ @2 /* You must have Throne of Bhaal installed. */
-
+DESIGNATED 0 LABEL ~korgan_friendship~
 
 /* CamDawg's custom IsValidForPartyDialogue() state. Thanks Cam!
    covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS, STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING */
