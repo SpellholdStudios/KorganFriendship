@@ -1,4 +1,4 @@
-![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/KorganFriendship?include_prereleases&color=darkred)<a name="top" id="top">
+![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/KorganFriendship?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)
 
@@ -12,7 +12,7 @@ Baldur's Gate Trilogy and EET<h3>
 
 **Authors:** Lava Del'Vortel and fluke13  
 **Mod Website:** <a href="http://www.spellholdstudios.net/ie/npciep">Spellhold Studios</a>  
-**Mod Forum:** <a href="http://www.shsforums.net/index.php?showforum=353">Korgan Friendship</a><br /><br />
+**Mod Forum:** <a href="http://www.shsforums.net/forum/656-korgan-friendship/">Korgan Friendship</a><br /><br />
 
 
 <div align="center">
@@ -30,7 +30,7 @@ One of the things many find sorely lacking in the Bioware NPCs are the more comp
 This mod adds a series of dialogues with Korgan.
 
 
-Visit the <a href="http://www.spellholdstudios.net/ie/npciep">website</a> or <a href="http://www.shsforums.net/index.php?showforum=353">forum</a> for all the latest updates.
+Visit the <a href="http://www.spellholdstudios.net/ie/npciep">website</a> or <a href="http://www.shsforums.net/forum/656-korgan-friendship/">forum</a> for all the latest updates.
 
 
 <hr>
@@ -150,6 +150,13 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 
 ## <a name="versions" id="versions"></a>Versions History
+
+##### Version 1.5 (December 14, 2019)
+
+- Fixed an issue with *Auto-Package Generator tool*: new version of MacOS (Catalina) prevented the mod to be installed.
+- Fixed wrong SHS links in readmes and metadata files.
+
+## 
 
 ##### Version 1.4 (November 24, 2019)
 
