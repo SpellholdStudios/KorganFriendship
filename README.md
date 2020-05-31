@@ -126,6 +126,7 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 #### Acknowledgements to:
 
 - Everyone on the Interaction Expansion project team, and everyone who has contributed to the mod!
+- Austin & Arcanecoast Team : Russian translation.
 
 ## 
 
@@ -150,6 +151,12 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 
 ## <a name="versions" id="versions"></a>Versions History
+
+##### Version 1.6 (May 31, 2020)
+
+- Added Russian translation (thanks to Austin & Arcanecoast Team).
+
+## 
 
 ##### Version 1.5 (December 14, 2019)
 
