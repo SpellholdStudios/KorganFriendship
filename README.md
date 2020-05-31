@@ -1,6 +1,6 @@
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/KorganFriendship?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Russian&color=limegreen)
 
 <div align="center"><h1></a>Korgan Friendship</h1>
 
@@ -14,6 +14,12 @@ Baldur's Gate Trilogy and EET<h3>
 **Mod Website:** <a href="http://www.spellholdstudios.net/ie/npciep">Spellhold Studios</a>  
 **Mod Forum:** <a href="http://www.shsforums.net/forum/656-korgan-friendship/">Korgan Friendship</a><br /><br />
 
+
+[Read the mod's readme](http://spellholdstudios.github.io/readmes/korganfriendship-readme-english.html)
+
+[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1225-korgan-friendship-soa-tob/)<br>
+
+&nbsp;
 
 <div align="center">
 <a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#faq">FAQ</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#versions">Versions History</a></br>
@@ -126,6 +132,7 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 #### Acknowledgements to:
 
 - Everyone on the Interaction Expansion project team, and everyone who has contributed to the mod!
+- Austin & Arcanecoast Team : Russian translation.
 
 ## 
 
@@ -150,6 +157,12 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 
 ## <a name="versions" id="versions"></a>Versions History
+
+##### Version 1.6 (May 31, 2020)
+
+- Added Russian translation (thanks to Austin & Arcanecoast Team).
+
+## 
 
 ##### Version 1.5 (December 14, 2019)
 
